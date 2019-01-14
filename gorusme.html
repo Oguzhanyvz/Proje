@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Görüşme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stil.css" />
+    <script src="main.js"></script>
+    <style>
+    .cerceve{
+        width: 773px;
+        margin-left: 85px;
+        height: 400px;
+        position: absolute;
+        margin-top:70px;
+        border: 2px solid black;
+    }
+    .cerceve1{
+        width: 800px;
+        margin-left: 200px;
+        height: 400px;
+        position: absolute;
+        margin-top:70px;
+    }
+    .formlar{
+        margin-left: 93px;
+        margin-top:150px;
+        position: absolute;
+    }
+.gorusmebuton{
+    margin-left: 250px;
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    margin-top:180px;
+}   
+.yazi{
+    margin-left:99px;
+    margin-top:90px;
+    position: absolute;
+   font-size: 20px;
+   font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+    <div class="en_ust_footer">
+        <div class="s1">
+
+
+            <img src="resimler/logo.png" alt="Logo" width="300px" height="60px" />
+        </div>
+
+        <div class="s5">
+            <p> <a href="giris_paneli.html">ÇIKIŞ</a> </p>
+        </div>
+        <div class="s6">
+            <p><a href="destek.html">DESTEK</a></p>
+        </div>
+        <div class="s7">
+            <p><a href="ayarlar.html">AYARLAR</a></p>
+        </div>
+        <div class="s8">
+            <p><a href="raporlar.html">RAPORLAR</a></p>
+        </div>
+        <div class="s9">
+            <p> <a href="iletisim.html">İLETİŞİM</a>   </p>
+        </div>
+        <div class="s9">
+            <p> <a href="anasayfa.html">ANASAYFA</a>   </p>
+        </div><form action="/action_page.php" method="post">
+            <div class="cerceve1">
+            <input type="text" name="fnamea"class="cerceve">
+            <div class="yazi">
+                GÖRÜŞME
+            </div>
+
+            
+            
+        
+            <div class="formlar">
+             Hasta Adı:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="fname" required><br>
+              <br>
+                  Hasta Soyadı: &nbsp;&nbsp; <input type="text" name="fname" required><br>
+                    <br>
+                   
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TC&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br>
+                        <br>
+                        Görüşme Tarihi&nbsp; <input type="text" name="fname" required><br>
+                        <br>
+                        Görüşme Nedeni&nbsp;<input type="text" name="fname" required><br>
+                        <br>
+                        
+                    </div>
+                    <div class="gorusmebuton">
+                <input type="submit"class="gorusmebuton" onclick="gorusme_buton()" value="GÖRÜŞME EKLE">
+            </div>
+              </form>
+              </div>
