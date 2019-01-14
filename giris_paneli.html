@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2018/12/09/09/15/christmas-3864552_960_720.jpg");
+            background-repeat: no-repeat;
+background-size: 100%;  
+ }
+
+        .tutucu {
+            width: 350px;
+            height: 300px;
+            background-color: white;
+            margin: 0 auto;
+            background-image: url("http://www.akademikkonferans.com/wp-content/uploads/2018/02/Altu%C4%9F-Oto-Kiralama-Arka-Plan-G%C3%B6rseli.jpg");
+            margin-top: 100px;
+            border-radius: 3px;
+        }
+
+        .gönder_butonu {
+            margin-left: 70px;
+        }
+      td{
+          color: white;
+
+      }
+      .kadr{
+margin-top: -10px;
+          
+      }
+      .resim_td{
+          border-bottom: 1px solid white;
+
+      }
+      .s1{
+width: 346px;
+height: 100px;
+
+      }
+      .k_adi_sifre{
+          width: 350px;
+          height: 140px;
+      }
+     .sol_div{
+width: 100px;
+height: 20px;
+float: left;
+color: white;
+font-size: 17px;
+padding-top: 40px;
+padding-left: 20px;
+     }
+     .sag_div{
+width: 166px;
+height: 20px;
+padding-top: 40px;
+float: right;
+margin-right: 14px;
+     }
+     .sol_div1{
+width: 100px;
+height: 20px;
+float: left;
+color: white;
+font-size: 17px;
+padding-top: 40px;
+padding-left: 20px;
+     }
+     .sag_div1{
+width: 166px;
+height: 20px;
+padding-top: 40px;
+float: right;
+margin-right: 14px;
+     }
+     .temizle{
+         margin-left: 30px;
+     }
+    </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giriş Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <div class="tutucu">
+        <table width="345" height="296">
+            <form id="form1" name="anaform" method="post" action="">
+
+                <div class="s1">
+                    <div class="resim_td" colspan="2">&nbsp;>
+                        <img class="kadr" src="resimler/giris_logo.png" width="341px;" height="95px;">
+
+                    </div>
+                </div>
+                <div class="k_adi_sifre">
+                    <div class="sol_div">Kullanıcı Adı:</div>
+                    <div class="sag_div"> <input id="kad" type="text" name="1"  /></div>
+                    <div class="sol_div1">Şifre:</div>
+                    <div class="sag_div1"><input id="sifre" type="password" name="12" /></div>
+
+
+                </div>
+
+
+
+            </form>
+            <input class="gönder_butonu" type="submit" onclick="yaz()" name="s1" id="s1" value="Giriş Yap" />
+    <input class="temizle" type="reset" name="s2" id="s2" value="Temizle" onclick="temizle()" />
+        </table>
+    </div>
+    
+
+</body>
+
+</html>
