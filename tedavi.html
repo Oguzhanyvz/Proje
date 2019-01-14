@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tedavi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+    <script src="main.js"></script>
+    <style>
+         .cerceve{
+            width:957px;
+            margin-left:136px;
+            height: 500px;
+            position: absolute;
+            margin-top:70px;
+            border: 2px solid black;
+
+        }
+        .cerceve1{
+            width:800px;
+            margin-left:110px;
+            height: 500px;
+            position: absolute;
+            margin-top:40px;
+            
+
+        }
+        .formlar{
+            margin-left: 150px;
+            margin-top:150px;
+            position: absolute;
+        }
+    .tedavibuton{
+        margin-left: 250px;
+        width: 150px;
+        height: 60px;
+        position: absolute;
+        margin-top:180px;
+    }   
+    .yazi{
+        margin-left:150px;
+        margin-top:90px;
+        position: absolute;
+       font-size: 20px;
+       font-weight: bold;
+    }
+    .formlarB{
+        
+            margin-left: 850px;
+            margin-top:220px;
+            position: absolute;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="en_ust_footer">
+        <div class="s1">
+
+
+            <img src="resimler/logo.png" alt="Logo" width="300px" height="60px" />
+        </div>
+
+        <div class="s5">
+            <p> <a href="giris_paneli.html">ÇIKIŞ</a> </p>
+        </div>
+        <div class="s6">
+            <p><a href="destek.html">DESTEK</a></p>
+        </div>
+        <div class="s7">
+            <p><a href="ayarlar.html">AYARLAR</a></p>
+        </div>
+        <div class="s8">
+            <p><a href="raporlar.html">RAPORLAR</a></p>
+        </div>
+        <div class="s9">
+            <p> <a href="iletisim.html">İLETİŞİM</a>   </p>
+        </div>
+        <div class="s9">
+            <p> <a href="anasayfa.html">ANASAYFA</a>   </p>
+        </div><form action="/action_page.php" method="post">
+            <div class="cerceve1">
+            <input type="text" name="fnamea"class="cerceve">
+            <div class="yazi">
+                TEDAVİ
+            </div>
+
+            
+            
+        
+            <div class="formlar">
+                    TC NO:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br>
+                    <br>
+              ADI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="fname" required><br>
+              <br>
+                   SOYADI: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fname" required><br>
+                    <br>
+                   
+                    
+                        DOĞUM TARİHİ&nbsp; <input type="date" name="fname" required><br>
+                        <br>
+                       
+                        
+                    </div>
+                    <div class="tedavibuton">
+                <input type="submit"class="tedavibuton" onclick="tedavi_butonu()" value="TEDAVİ EKLE">
+            </div>
+              </form>
+              </div>
+              <div class="formlarB">
+                    DOKTOR ADI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br>
+                    <br>
+              TEDAVİ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="fname" required><br>
+              <br>
+                   TEDAVİ TARİHİ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" name="fname" required><br>
+                    <br>
+                   
+                    
+                       
+                        
+                    </div>
+</body>
+</html>
