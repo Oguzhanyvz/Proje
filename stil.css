@@ -1,0 +1,472 @@
+.en_ust_footer{
+    width: 1356px;
+    height: 60px;
+    background-color:rgb(52, 52, 61);
+    
+    }
+    .en_ust_footer1{
+
+        width: 1373px;
+    height: 60px;
+    background-color:rgb(52, 52, 61);
+    }
+    a {
+        color: white;
+    }
+    
+    body{
+        width: 100%;
+           margin: -7px;
+            background-color: rgba(55, 86, 122, 0.815);
+        }
+    .s1{
+    width: 400px;
+    height: 60px;
+    float: left;
+    margin-right: 70px;
+    }
+    
+     p{
+    
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+   
+    .s5{
+    width: 110px;
+    height: 60px;
+        float: right;
+                display: table;
+    color: white;
+                }
+                .s6{
+                    width: 110px;
+                    height: 60px;
+                    float: right;
+                    display: table;
+    color: white;
+                    }
+                    .s7{
+                        width: 110px;
+                        height: 60px;
+                        float: right;
+                        display: table;
+    color: white;
+                        }
+                        .s8{
+                            width: 110px;
+                            height: 60px;
+                            float: right;
+                            display: table;
+    color: white;
+                            }
+      .s9{
+    width: 110px;
+   height: 60px;
+        float: right;   display: table;
+    color: white;
+   }
+   .sol_footer{
+       float: left;
+       width: 300px;
+       height: 562px;
+         margin-top: 10px;
+         margin-left: 9px;
+         border: 2px solid black;
+         border-bottom: 0
+         
+  
+   }
+   .sol_baslik{
+width: 300px;
+height: 50px;
+border-bottom: 2px solid black;
+   }
+   .sol_isimler{
+    width: 300px;
+    height: 100px;
+    border-bottom: 2px solid black;
+   }
+   .sol_baslik_yazi{
+     font-size: 20px;
+     margin-left: 10px;
+     padding-top: 10px;
+ }
+ li{
+     margin-bottom: 2px;
+ }
+ .orta_footer{
+     margin-top: 10px;
+     margin-left: 3px;
+    border: 2px solid black;
+    width: 1027px;
+    height: 560px;
+    float: left;
+
+ }
+ .orta_footer_ust_1{
+width: 1027px;
+height: 49px;
+border-bottom: 2px solid black;
+ }
+ .orta_footer_sekmeler{
+     width: 1027px;
+     height: 203px;
+     border-bottom: 2px solid black;
+
+ }
+ .orta_en_alt_sol{
+     width: 513px;
+     height: 304px;
+     border-right: 2px solid black;
+     float: left;
+ }
+ .orta_en_alt_sag{
+    width: 510px;
+    height: 304px;
+    float: left;
+}
+.kontrol_yaklasan{
+width: 513px;
+height: 40px;
+border-bottom: 2px solid black;
+font-size: 20px;
+padding-top: 9px;
+text-align: center;
+}
+.hasta_adi{
+    padding-top: 12px;
+    padding-left: 10px;
+    width: 150px;
+    height: 20px;
+    font-size: 18px;
+    float: left;
+}
+.hasta_gosterilcek_ad{
+    width: 180px;
+    height: 20px;
+    font-size: 18px;
+    float: left;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.kareler{
+    
+width: 103px;
+height: 74px;
+float: left;
+margin-top: 50px;
+margin-right: 90px;
+}
+.kareler1{
+    
+width: 111px;
+height: 74px;
+float: left;
+margin-top: 50px;
+margin-right: 90px;
+margin-left: 142px;
+}
+.kareleri_tutan{
+    width: 1027px;
+    height: 133px;
+}
+.ikonlarin_aciklamasi{
+    width: 77px;
+    height: 20px;
+    float: left;
+    
+    padding-left: 40px;
+    margin-left: 79px;
+}
+.ikonlarin_aciklamasi1{
+    width: 85px;
+    height: 20px;
+    float: left;
+    
+    padding-left: 74px;
+    margin-left: 79px;
+}
+.ikonlarin_aciklamasi2{
+    width: 92px;
+    height: 20px;
+    float: left;
+    
+    padding-left: 58px;
+    margin-left: 64px;
+}
+.ikonlarin_aciklamasi4{
+    width: 92px;
+    height: 20px;
+    float: left;
+    margin-left: 622px;
+    padding-left: 118px;
+    position: absolute;
+}
+.yaklasan_alti{
+    width: 409px;
+    height: 192px;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 48px;
+    border-bottom: 0;
+    
+}
+.yaklasan_altinin_alti{
+    width: 409px;
+    height: 62px;
+    border-bottom: 2px solid black;
+}
+.takvim_yaklasan{
+width: 70px;
+height: 47px;
+margin-left: 7px;
+margin-top: 7px ;
+float: left;
+
+}
+.yaklasan_bilgiler{
+    width: 200px;
+    height: 47px;
+    float: left;
+    
+    margin-top: 6px;
+}
+
+
+
+
+
+
+
+
+/* Popup (arka plan) */
+.modal {
+    display: none; /* Varsayılan olarak gizlidir */
+    position: fixed; /* Yerinde kal */
+    z-index: 1; /* Üstte */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ful Genişlik */
+    height: 100%; /* Ful Yükseklik */
+    overflow: auto; /* Gerekirse kaydırmayı etkinleştir */
+    background-color: rgb(0,0,0); /* Yedek renk */
+    background-color: rgba(0,0,0,0.4); /* Siyah w / opaklık */
+}
+/* İçerik / Kutu */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* % 15 üstten ve ortalanmış */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    height: 457px;
+}
+
+/* Kapat Düğmesi */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.iletisim_baslik{
+
+width: 529px;
+height: 50px;
+border: 2px solid black;
+margin: 0 auto;
+margin-top: 10px;
+}
+.iletisim{
+    width: 529px;
+    height: 397px;
+    border: 2px solid black;
+border-top: 0;
+margin: 0 auto;
+padding-top: 20px;
+}
+.iletisim_ici{
+width: 420px;
+height: 450px;
+margin: 0 auto;
+
+}
+.dikdortgenler{
+    width: 400px;
+    height:30px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+.dikdortgenler1{
+    width: 400px;
+    height:109px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.gonder_butonu_iletisim{
+    height: 40px;
+    float: right;
+    margin-right: 6px;
+}
+.input_yeri{
+margin-left: 30px;
+
+}
+.input_yeri2{
+    margin-left: 85px;
+    
+    }
+    .input_yeri3{
+        margin-left: 75px;
+        
+        }
+        .input_yeri4{
+            margin-left: 40px;
+            
+            }
+.input_yeri5{
+height: 100px;
+margin-left: 60px;
+width: 256px;
+
+}
+h2{
+    margin-left: 15px;
+}
+.raporlar{
+width: 700px;
+height: 500px;
+margin: 0 auto;
+margin-top: 20px;
+border: 2px solid black;
+}
+.raporlar_baslik{
+    width: 700px;
+    height: 50px;
+    border-bottom: 2px solid black;
+}
+.raporlar_sol{
+    width: 173px;
+    height: 430px;
+    border-right: 2px solid black;
+    float: left;
+    padding-left: 5px;
+}
+.raporlar_sag{
+    width: 519px;
+    height: 449px;
+    
+    float: left;
+}
+.destek{
+width: 379px;
+height: 375px;
+margin: 0 auto;
+margin-top: 20px;
+border: 2px solid black;
+}
+.destek_baslik{
+width: 379px;
+height: 50px;
+border-bottom: 2px solid black;
+padding-top: 7px;
+
+}
+.canli_baslik{
+    margin-top: 10px;
+margin-left: 86px;
+}
+.destek_yazi{
+width: 351px;
+height: 90px;
+border-bottom: 2px solid black;
+font-size: 20px;
+padding-left: 30px;
+padding-top: 30px;
+}
+.destek_ad_soyad{
+    width: 351px;
+    height: 50px;
+
+}
+.destek_ad_soyad{
+    width: 351px;
+    height: 50px;
+    padding-left: 28px;
+    padding-top: 15px
+
+}
+.destek_input{
+
+    margin-left: 10px;
+}
+.destek_input1{
+
+    margin-left: 23px;
+}
+.sobeti_baslat_butonu{
+height: 50px;
+margin-left: 138px;
+
+}
+.ayarlar{
+width: 691px;
+height: 162px;
+border: 2px solid black;
+margin: 0 auto;
+margin-top: 20px;
+}
+.ayarlar_baslik{
+    width: 676px;
+height: 40px;
+border-bottom: 2px solid black;
+padding-left: 10px;
+}
+.ayarlar_detay{
+    width: 226px;
+    height: 120px;
+float: left;
+
+}
+.sms_yazisi{
+    width: 170px;
+    height: 13px;
+    
+}
+.secim_boyutu{
+    width: 150px;
+
+}
+.ayarlar_detay1{
+    width: 226px;
+    height: 120px;
+float: left;
+padding-left: 7px;
+}
+.secim_boyutu1{
+    width: 150px;
+margin-left: 10px;
+}
+.kaydet_ayarlar{
+    width: 691px;
+    height: 40px;
+    border: 2px solid black;
+    border-top: white;
+    margin: 0 auto;
+}
+.kaydetme_ayarlar{
+    float: right;
+    height: 40px;
+    width: 78px;
+    margin-right: 6px;
+}
