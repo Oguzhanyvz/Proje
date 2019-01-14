@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Randevu Ver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+    <script src="main.js"></script>
+    <style>
+        .cerceve{
+            width:800px;
+            margin-left:200px;
+            height: 500px;
+            position: absolute;
+            margin-top:70px;
+            border: 2px solid black;
+
+        }
+        .cerceve1{
+            width:800px;
+            margin-left:110px;
+            height: 500px;
+            position: absolute;
+            margin-top:40px;
+            
+
+        }
+        .formlar{
+            margin-left: 380px;
+            margin-top:90px;
+            position: absolute;
+        }
+    .kimlikbuton{
+        margin-left: 350px;
+        width: 100px;
+        height: 40px;
+        position: absolute;
+        margin-top:130px;
+    }   
+   
+   .resim{
+
+    background-image:url("foto.jpg");
+    width:145px;
+    height: 170px;
+    margin-left: -130px;
+    position: absolute;
+    margin-top:-50px;
+   }
+  .altform{
+margin-top:80px;
+margin-left: 60px;
+  }
+ 
+  .saat_detay{
+      margin-left:-130px;
+      width:10px; 
+  }
+  .rtarih{
+      font-size: 15px;
+      margin-left:-30px;
+      margin-top:-20px;
+      position: absolute;
+  }
+  .formoda{
+      margin-top:-20px; 
+  }
+  .kaydetbuton{
+      margin-top:30px;
+  }
+  .Silbuton{
+      margin-left:50px;
+      margin-top:-20px;
+      width: 50px;
+  }
+  .bay{
+    margin-left:580px;
+    margin-top: -330px;
+    position: absolute;
+  }
+  .bayan{
+    margin-left:500px;
+    margin-top:-350px;
+    position: absolute;
+  }
+  .yenihastabuton{
+    margin-left:250px ;
+    margin-top:-120px;
+    width: 200px;
+    height: 200px;
+  }
+    </style>
+</head>
+
+<body>
+
+    <div class="en_ust_footer">
+        <div class="s1">
+
+
+            <img src="resimler/logo.png" alt="Logo" width="300px" height="60px" />
+        </div>
+
+        <div class="s5">
+            <p> <a href="giris_paneli.html">ÇIKIŞ</a> </p>
+        </div>
+        <div class="s6">
+            <p><a href="destek.html">DESTEK</a></p>
+        </div>
+        <div class="s7">
+            <p><a href="ayarlar.html">AYARLAR</a></p>
+        </div>
+        <div class="s8">
+            <p><a href="raporlar.html">RAPORLAR</a></p>
+        </div>
+        <div class="s9">
+            <p> <a href="iletisim.html">İLETİŞİM</a> </p>
+        </div>
+        <div class="s9">
+            <p> <a href="anasayfa.html">ANASAYFA</a> </p>
+        </div>
+        <form action="" method="post">
+            <div class="cerceve1">
+                <input type="text" name="fnamea" class="cerceve">
+
+
+
+
+
+
+                <div class="formlar">
+                    TC:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="fname" required><br>
+                    <br>
+                    AD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+                        type="text" name="fname" required><br>
+                    <br>
+
+                    SOYAD:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="fname" required><br>
+                    <br>
+                    SABİT TEL:&nbsp; <input type="number" name="fname" required><br>
+                    <br>
+                    CEP TEL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="fname" required><br>
+                    <br>
+
+
+
+                </div>
+                <div class="kimlikbuton">
+                    <div class="resim">
+
+                    </div>
+                    <div class="altform">
+                        <input type="date" name="fnamea" class="altform"><br>
+                        <div class="rtarih">R.TARİHİ
+                        </div>
+                    </div>
+
+                    <div class="saat_detay"><br>
+                        <select name="os_type" class="secim_boyutu1">
+                            <option value="win">Başlama Saati</option>
+
+                        </select> <br><br>
+                        <select name="os_type" class="secim_boyutu1">
+                            <option value="win">Bitiş Saati</option>
+
+                        </select><br><br>
+                        <div class="formoda">
+                            <div class="saat_oda"><br>
+                                <select name="os_type" class="secim_boyutu1">
+                                    <option value="win">Tedavi Odası</option>
+                                    <div class="kaydetbuton">
+                                        <input type="submit" class="kaydetbuton" onclick="randevu_ver_butonu()" value="KAYDET">
+                                    </div>
+                                    <div class="Silbuton">
+                                        <input type="reset" class="Silbuton" value="Sil">
+                                    </div>
+                                    <div class="bay">
+                                        <input type="radio" name="colors">Bay</div><br>
+                                    <div class="bayan">
+                                        <input type="radio" name="colors">Bayan
+                                    </div>
+                            </div>
+                            <div class="yenihastabuton">
+                                <input type="button" onclick="yeni_hasta_ver_butonu()" class="yenihastabuton" value="YENİ HASTA KAYIT">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+</body>
+
+</html>
