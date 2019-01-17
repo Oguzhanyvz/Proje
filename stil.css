@@ -4,6 +4,37 @@
     background-color:rgb(52, 52, 61);
     
     }
+    #btn{
+        float: right;
+        height: 24px;
+        margin-right: 7px;
+        border-radius: 3px;
+        background-color: rgb(153, 45, 111);
+        border: 2px solid black;
+    }
+    .ara_btn{
+        border-radius: 3px;
+        background-color: rgb(153, 45, 111);
+        border: 2px solid black;
+
+
+    }
+    #txtara{
+
+        border: 2px solid black; 
+    }
+    .arama_yeri{
+width: 300px;
+height: 39px;
+padding-left: 40px;
+padding-top: 10px;
+
+    }
+    .listelencek_yer{
+        width: 300px;
+        height: 459px;
+        border-bottom: 2px solid black;
+    }
     .en_ust_footer1{
 
         width: 1373px;
@@ -17,7 +48,7 @@
     body{
         width: 100%;
            margin: -7px;
-            background-color: rgba(55, 86, 122, 0.815);
+            background-color: rgba(134, 176, 226, 0.815);
         }
     .s1{
     width: 400px;
@@ -470,3 +501,15 @@ margin-left: 10px;
     width: 78px;
     margin-right: 6px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
