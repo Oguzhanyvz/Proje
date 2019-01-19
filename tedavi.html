@@ -7,6 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
     <script src="main.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript">
+    var jsonData = {
+        "Table": [{
+            "stateid": "2",
+            "statename": "Akif Kurt"
+        }, {
+            "stateid": "3",
+            "statename": "Zeynep Sezer"
+        }, {
+            "stateid": "4",
+            "statename": "Hasan Yılmaz"
+        }, ]
+    };
+   
+       $(document).ready(function () {
+           var listItems = '<option selected="selected" value="0">Varsayılan</option>';
+   
+        for (var i = 0; i < jsonData.Table.length; i++) {
+               listItems += "<option value='" + jsonData.Table[i].stateid + "'>" + jsonData.Table[i].statename + "</option>";
+           }
+   
+           $("#DLState").html(listItems);
+       });
+    </script>
+                  function myFunction() {
+                    document.getElementById("frm1").reset();
+                  }
+                  </script>
     <style>
          .cerceve{
             width:957px;
@@ -51,7 +80,12 @@
             margin-top:220px;
             position: absolute;
         }
-    
+    .ted{
+        width: 100px;
+    }
+    .sel{
+        margin-left: -6px;
+    }
     </style>
 </head>
 <body>
@@ -110,9 +144,11 @@
               </form>
               </div>
               <div class="formlarB">
-                    DOKTOR ADI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" required><br>
+                    DOKTOR ADI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <label for="DLState"> </label>
+                    <select id="DLState"class="sel"></select><br>
                     <br>
-              TEDAVİ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="fname" required><br>
+              TEDAVİ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" name="fname"class="ted" required><br>
               <br>
                    TEDAVİ TARİHİ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="date" name="fname" required><br>
                     <br>

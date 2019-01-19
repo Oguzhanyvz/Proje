@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Raporlar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="stil.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script type="text/javascript">
+        
+        </script>
 </head>
 
 <body>
+        
+
     <div class="en_ust_footer1">
         <div class="s1">
 
@@ -40,23 +46,80 @@
     </div>
     <div class="raporlar">
             <div class="raporlar_baslik"><h2>RAPOR SONUÇLARI</h2></div>
-            <div class="raporlar_sol">
-                <li>Mehmet Yılmaz</li> <br>
-                <li>Derya Baştürk</li><br>
-                <li>Basri Sönmez</li><br>
-                <li>Haluk Korkmaz</li><br>
-                <li>Ayşe Yılmaz</li><br>
-                <li>Nursema Gül</li><br>
-            </div>
-            <div class="raporlar_sag">
+            
+            
+                    
+            <div class="isimlistesi"id="demo">
+                
+    <div id="DLState"></select>
+  
+          
+        <div class="raporlar_sag">
+                    
                 <img src="resimler/rapor.jpg" width="519px" height="428px"/>   
             
             </div>
-
-
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script type="text/javascript">
+        var jsonData = {
+            "Table": [{
+                
+                "statename": "Hasan Gider"
+            }, {
+                
+                "statename": "Ayşe Dursun"
+            }, {
+               
+                "statename": "Çetin Fidan"
+            }, {
+                
+                "statename": "Cenk Dağlar"
+            }, {
+                
+                "statename": "Reşat Koç"
+              },  {
+                
+                "statename": "Yunus Çelik"
+              },{
+                
+                "statename": "Mustafa Argın"
+              },  {
+                
+                
+                "statename": "Tarık Bakır"
+              },  {
+                
+                
+                "statename": "Begüm Akyıldız"
+              },  
+            ]
+        };
+       
+           $(document).ready(function () {
+               var listItems = '';
+       
+            for (var i = 0; i < jsonData.Table.length; i++) {
+                   listItems += "<div class='liste' value='" + jsonData.Table[i].stateid + "'>" + jsonData.Table[i].statename + "</div>";
+               }
+       
+               $("#DLState").html(listItems);
+           });
+        </script>
+        
+                    
+            <div class="raporlar_sag">
+                    
+                <img src="resimler/rapor.jpg" width="519px" height="428px"/>   
+            
+            </div>
+        </div>
+            
+                
 
 
     </div>
+  
 </body>
 
 </html>
